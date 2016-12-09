@@ -16,32 +16,22 @@ header .contact { position: fixed; top: 0; left: 0; width: 100%; background-colo
 
 section { margin-bottom: 100px; }
 
-.pre-container { position: fixed; z-index: 1; top: 0; left: 0; width: 100%; height: 100%; background-image: url(../img/marmot.png); background-size: cover; }
+.pre-container { position: fixed; z-index: 1; top: 0; left: 0; width: 100%; height: 100%; background-image: url(../img/marmot-styled3.jpg); background-size: cover; }
 .container { position: relative; z-index: 2; }
 
-.projects > div > div { display: inline-block; width: 100%; padding: 20px; background-color: rgba(255, 255, 255, 0.9); box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); } 
-	.projects > div > div img { margin: 10px 0; }
-	.projects > div > div h3 { border-bottom: 1px solid rgba(0 ,0, 0 ,0.1); padding-bottom: 20px; }
-	.projects > div > div > a { display: block; margin: 10px auto; }
-	.projects > div > div > a.btn { margin: 20px auto; }
-		.projects > div > div > a+a.btn { margin-top: 30px; }
-		.projects > div > div > a.btn+a.btn { margin-top: 40px; }
-	.projects > div > div .tool-thumbnails img { max-width: 30%; max-height: 36px; margin-right: 14px; }
-	.projects > div > div .tool-thumbnails img:last-child { margin-right: 0; }
+.projects > div {  }
+.projects .project { display: inline-block; width: 100%; padding: 20px; background-color: rgba(255, 255, 255, 0.9); box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); margin-bottom: 20px; } 
+	.projects .project img { margin: 10px 0; }
+	.projects .project h3 { border-bottom: 1px solid rgba(0 ,0, 0 ,0.1); padding-bottom: 20px; }
+	.projects .project > a { display: block; margin: 10px auto; }
+	.projects .project > a.btn { margin: 20px auto; }
+		.projects .project > a+a.btn { margin-top: 30px; }
+		.projects .project > a.btn+a.btn { margin-top: 40px; }
+	.projects .project .tool-thumbnails img { max-width: 30%; max-height: 36px; margin-right: 14px; }
+	.projects .project .tool-thumbnails img:last-child { margin-right: 0; }
 @media all and ( min-width: 760px ){
-	.projects > div { 
-		-webkit-column-count: 3; 
-		-moz-column-count: 3; 
-		column-count: 3; 
-
-		-webkit-column-gap: 20px; /* Chrome, Safari, Opera */
-	  -moz-column-gap: 20px; /* Firefox */
-	  column-gap: 20px;
-
-	  -webkit-column-rule: 20px; /* Chrome, Safari, Opera */
-	  -moz-column-rule: 20px; /* Firefox */
-	  column-rule: 20px;
-	}
+	.projects .project { width: calc(33% - 13px); vertical-align: top; }
+	.projects .project + .project { margin-left: 20px; }
 } 
 
 .about { padding: 40px; background-color: rgba(255, 255, 255, 0.9); box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
